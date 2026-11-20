@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student's Kit. No hints — Kit 5 · Final Review: All Tenses (4 activities)</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tPpASk8IAh4VgP2fM0y7gliO7aMHUlfHFhq5EKitbLaJW_MQKPmsRkZ8Kmjee1fY7nAgAyzqRsGMcFTOjvBtboFfs1TrKt22x5XjUHC6IpmD11komKfQAlw8hB8aqwJ3-Yi2XclHCfnDkE-O7rhLRQ" charset="UTF-8"></script><style>
+  :root{
+    --navy:#0d2130; --mint:#14584a; --grey:#2f3d49;
+    --ok:#0f6047; --bad:#98221a; --line:#b9d2d3;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; color:var(--navy);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:linear-gradient(180deg,#b0d6de 0%,#c8e3e7 28%,#e6f3f4 58%,#f2faf9 100%);
+    background-attachment:fixed; min-height:100vh;
+  }
+  .sky{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+  .cloud{position:absolute;background:#fff;border-radius:50%;filter:blur(14px);opacity:.75}
+  .c1{width:320px;height:110px;top:4%;left:-40px}
+  .c2{width:240px;height:90px;top:12%;right:6%}
+  .c3{width:380px;height:120px;top:26%;left:22%;opacity:.55}
+  .c4{width:280px;height:100px;bottom:8%;left:6%;opacity:.6}
+  .c5{width:340px;height:110px;bottom:2%;right:10%;opacity:.5}
+  .wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:22px 16px 80px}
+
+  header.hero{text-align:center;padding:18px 0 8px}
+  .banner{display:inline-flex;flex-direction:column;align-items:center;gap:2px;
+    background:rgba(255,253,246,.92);border:1px solid #e6ddc4;border-radius:18px;
+    padding:18px 34px;box-shadow:0 6px 20px rgba(27,58,92,.13);position:relative}
+  .banner:before{content:"";position:absolute;inset:6px;border-radius:13px;border:1px dashed #e2d6b6}
+  h1{font-size:42px;margin:0;letter-spacing:.5px}
+  .sub{font-size:19px;color:var(--mint);font-weight:700;margin-top:2px}
+  .meta{font-size:18px;color:var(--grey);margin-top:12px}
+
+  .constructions{margin:14px auto 0;max-width:760px;background:rgba(255,255,255,.72);
+    border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+  .constructions-title{font-size:15px;font-weight:800;letter-spacing:.6px;color:var(--mint);
+    text-transform:uppercase;margin-bottom:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;justify-content:center}
+  .chip{font-size:17px;font-weight:700;color:var(--navy);background:#f4fbfa;
+    border:1px solid #cfe4e0;border-radius:20px;padding:4px 11px}
+  .chip i{font-style:normal;font-weight:500;color:var(--grey);font-size:14px}
+
+  .saved-note{font-size:16px;color:#4a5a66}
+  .bar{position:sticky;top:0;z-index:5;margin:16px 0 20px;
+    background:rgba(255,255,255,.94);backdrop-filter:blur(6px);
+    border:1px solid var(--line);border-radius:14px;
+    padding:10px 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+    box-shadow:0 3px 12px rgba(27,58,92,.08)}
+  .bar .stat{font-size:19px;font-weight:700}
+  .bar .stat b{color:var(--mint)}
+  .bar .grow{flex:1}
+  button{font-family:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);
+    background:#fff;color:var(--navy);font-size:17px;font-weight:700;padding:9px 16px;transition:.15s}
+  button:hover{background:#f2f9f8;border-color:#a9cdc8}
+  button.primary{background:var(--navy);color:#fff;border-color:var(--navy)}
+  button.primary:hover{background:#24507d}
+  button.ghost{background:transparent}
+  button.small{padding:7px 14px;font-size:16px;font-weight:600}
+  button.mode{display:inline-flex;align-items:center;gap:7px;padding:7px 12px}
+  button.mode .dot{width:9px;height:9px;border-radius:50%;background:#c3d3d6;transition:.15s}
+  button.mode.on{background:#fdf6ec;border-color:#e8cfa4;color:#8a5a12}
+  button.mode.on .dot{background:#e0912f}
+
+  section.block{background:rgba(255,255,255,.95);border:1px solid var(--line);
+    border-radius:16px;padding:16px 16px 14px;margin-bottom:16px;
+    box-shadow:0 4px 16px rgba(27,58,92,.09)}
+  section.block.submitted{border-color:#a9cdc8}
+  .head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .tag{font-size:15px;font-weight:800;color:var(--mint);letter-spacing:.6px}
+  .title{font-size:27px;font-weight:800;margin:0}
+  .focus{font-size:14px;color:var(--grey);margin:2px 0 0}
+  .hint{font-size:17.5px;color:var(--bad);margin-top:6px;font-style:italic}
+  body.exam .hint{display:none}
+  .hint-off{display:none;font-size:15px;color:#6d460b;margin-top:6px;font-style:italic}
+  body.exam .hint-off{display:block}
+  body.exam .instr{display:none}
+  .instr{font-size:18px;color:var(--grey);margin:8px 0 12px;font-style:italic}
+  .instr-exam{display:none;font-size:18px;color:#6d460b;margin:8px 0 12px;font-style:italic}
+  body.exam .instr-exam{display:block}
+
+  ol.sents{list-style:none;margin:0;padding:0}
+  ol.sents li{display:flex;align-items:baseline;gap:10px;padding:6px 0;border-bottom:1px dashed #e6eef0}
+  ol.sents li:last-child{border-bottom:none}
+  .txt{flex:1;font-size:23px;line-height:1.75}
+  .root{font-size:18.5px;font-weight:800;color:var(--navy);white-space:nowrap;letter-spacing:.3px;
+    min-width:118px;text-align:right}
+  input.ans{font-family:inherit;font-size:22px;color:var(--navy);font-weight:700;
+    border:none;border-bottom:2px solid #6ea79f;background:#f4fbf9;
+    padding:3px 10px;min-width:186px;text-align:center;border-radius:5px 5px 0 0;outline:none;transition:.15s}
+  input.ans:focus{border-color:var(--mint);background:#eef9f6;box-shadow:0 2px 0 rgba(46,125,107,.18)}
+  input.ans.ok{border-color:var(--ok);background:#eaf7f2;color:var(--ok)}
+  input.ans.bad{border-color:var(--bad);background:#fdf0ee;color:var(--bad);text-decoration:line-through}
+  .mark{width:24px;font-weight:800;font-size:20px}
+  .mark.ok{color:var(--ok)} .mark.bad{color:var(--bad)}
+  .expl{display:none;font-size:17.5px;color:var(--grey);margin:0 0 8px 0;padding:6px 10px;
+    background:#f6faf9;border-left:3px solid var(--line);border-radius:0 8px 8px 0}
+  .expl.show{display:block}
+  .expl b{color:var(--ok)}
+  .foot{display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap}
+  .score{font-size:18.5px;font-weight:700;color:var(--grey)}
+  .score b{color:var(--navy)}
+  .timer{font-size:17px;font-weight:700;color:var(--grey);font-variant-numeric:tabular-nums;
+    background:#f3f8f8;border:1px solid var(--line);border-radius:8px;padding:3px 9px}
+  .timer.run{color:var(--mint);border-color:#a9cdc8;background:#eef9f6}
+  .timer.done{color:var(--navy);border-color:#c9dbe0;background:#e9f2f5}
+  .bottom-banner{margin:26px 0 0;text-align:center}
+  .bottom-banner img{width:100%;max-width:860px;height:auto;display:block;margin:0 auto;
+    border-radius:16px;box-shadow:0 6px 22px rgba(27,58,92,.12)}
+
+  .toast{position:fixed;left:50%;transform:translateX(-50%) translateY(80px);
+    bottom:26px;background:var(--navy);color:#fff;padding:10px 18px;border-radius:24px;
+    font-size:17px;font-weight:700;opacity:0;transition:.35s;z-index:50;pointer-events:none}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  input.ans.rev{border-bottom-style:dashed;font-style:italic}
+  @media(max-width:760px){
+    .txt{font-size:19px;line-height:1.7} .root{min-width:92px;font-size:16px}
+    input.ans{min-width:140px;font-size:19px}
+    h1{font-size:30px} .title{font-size:22px} .banner{padding:14px 18px}
+  }
+
+  /* --- kit additions --- */
+  .kitbadge{display:inline-block;font-size:13px;font-weight:800;letter-spacing:1.4px;
+    color:#fff;background:var(--mint);border-radius:999px;padding:3px 12px;margin-bottom:6px}
+  .focusline{font-size:16px;font-weight:700;color:var(--mint);margin-top:5px}
+  .hintline{font-size:16px;color:#4a5a66;background:#f4fbfa;border:1px dashed var(--line);
+    border-radius:10px;padding:8px 12px;margin:4px 0 2px}
+  .kitcap{margin-top:10px;font-size:15px;font-weight:700;color:var(--grey)}
+</style>
+</head>
+<body>
+<div class="sky">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <div class="cloud c4"></div><div class="cloud c5"></div>
+</div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="banner">
+      <div class="kitbadge">KIT 5 OF 5</div>
+      <h1>STUDENT'S KIT</h1>
+      <div class="sub">no hints · Final Review: All Tenses</div>
+    </div>
+    <div class="meta">4 independent activities × 6 gaps = 24 items<br>
+      <span class="saved-note">no hints · activities 17–20 of the full 20-activity workbook · answers and timers are saved in this browser — you can continue later</span></div>
+    <div class="constructions">
+      <div class="constructions-title">Grammar in this kit</div>
+      <div class="chips">
+        <span class="chip">Present Simple</span>
+        <span class="chip">Present Continuous</span>
+        <span class="chip">Past Simple</span>
+        <span class="chip">Future Simple (will)</span>
+        <span class="chip">be going to</span>
+        <span class="chip">State verbs</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="bar">
+    <div class="stat">Correct: <b id="totalOk">0</b> / 24</div>
+    <div class="grow"></div>
+    <button class="mode" id="examToggle" title="Check answers only when the whole practice is done">
+      <span class="dot"></span><span id="examLabel">Exam mode: off</span>
+    </button>
+    <button class="small ghost" id="resetAll">Reset</button>
+    <button class="small" id="checkAll">Check all</button>
+  </div>
+
+  <div id="blocks"></div>
+
+  <div class="kitcap">Kit 5 of 5 · activities 17–20 · Final Review: All Tenses</div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const DATA = [
+ {
+  "n": 1,
+  "tag": "ACTIVITY",
+  "title": "MY COUSIN FROM NOVOSIBIRSK",
+  "focus": "Итоговое повторение: все времена",
+  "hint": "",
+  "items": [
+   {
+    "s": "My cousin ______ in Novosibirsk.",
+    "b": "LIVE",
+    "a": "lives",
+    "e": "Постоянный факт → Present Simple: lives.",
+    "gaps": [
+     {
+      "b": "LIVE",
+      "a": "lives"
+     }
+    ]
+   },
+   {
+    "s": "Next month he ______ to see us — the tickets are already bought.",
+    "b": "COME",
+    "a": "is coming",
+    "e": "Билеты куплены — договорённость → Present Continuous: is coming.",
+    "gaps": [
+     {
+      "b": "COME",
+      "a": "is coming"
+     }
+    ]
+   },
+   {
+    "s": "Last summer he ______ two weeks with us.",
+    "b": "SPEND",
+    "a": "spent",
+    "e": "Last summer → Past Simple; spend → spent.",
+    "gaps": [
+     {
+      "b": "SPEND",
+      "a": "spent"
+     }
+    ]
+   },
+   {
+    "s": "He ______ that our city is more interesting than his.",
+    "b": "THINK",
+    "a": "thinks",
+    "e": "Мнение → Present Simple: thinks.",
+    "gaps": [
+     {
+      "b": "THINK",
+      "a": "thinks"
+     }
+    ]
+   },
+   {
+    "s": "At the moment he ______ for a new job.",
+    "b": "LOOK",
+    "a": "is looking",
+    "e": "At the moment → Present Continuous: is looking.",
+    "gaps": [
+     {
+      "b": "LOOK",
+      "a": "is looking"
+     }
+    ]
+   },
+   {
+    "s": "He ______ us again in winter — I’m sure.",
+    "b": "VISIT",
+    "a": "will visit",
+    "e": "Прогноз с I’m sure → Future Simple: will visit.",
+    "gaps": [
+     {
+      "b": "VISIT",
+      "a": "will visit"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "tag": "ACTIVITY",
+  "title": "THE SCHOOL PROJECT",
+  "focus": "Итоговое повторение: все времена",
+  "hint": "",
+  "items": [
+   {
+    "s": "Our teacher ______ us a new project yesterday.",
+    "b": "GIVE",
+    "a": "gave",
+    "e": "yesterday → Past Simple; give → gave.",
+    "gaps": [
+     {
+      "b": "GIVE",
+      "a": "gave"
+     }
+    ]
+   },
+   {
+    "s": "At the moment we ______ about the topic in groups.",
+    "b": "DISCUSS",
+    "a": "are discussing",
+    "e": "At the moment → Present Continuous: are discussing.",
+    "gaps": [
+     {
+      "b": "DISCUSS",
+      "a": "are discussing"
+     }
+    ]
+   },
+   {
+    "s": "We ______ the presentation on Friday — the day is fixed.",
+    "b": "SHOW",
+    "a": "are showing",
+    "e": "День согласован → Present Continuous: are showing.",
+    "gaps": [
+     {
+      "b": "SHOW",
+      "a": "are showing"
+     }
+    ]
+   },
+   {
+    "s": "I think our project ______ the first prize.",
+    "b": "WIN",
+    "a": "will win",
+    "e": "Прогноз с I think → will win.",
+    "gaps": [
+     {
+      "b": "WIN",
+      "a": "will win"
+     }
+    ]
+   },
+   {
+    "s": "My partner ______ more time to prepare.",
+    "b": "NEED",
+    "a": "needs",
+    "e": "need — состояние, 3-е лицо → needs.",
+    "gaps": [
+     {
+      "b": "NEED",
+      "a": "needs"
+     }
+    ]
+   },
+   {
+    "s": "Look! The wall newspaper is falling — it ______ down.",
+    "b": "FALL",
+    "a": "is going to fall",
+    "e": "Вывод по видимому признаку → is going to fall.",
+    "gaps": [
+     {
+      "b": "FALL",
+      "a": "is going to fall"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "tag": "ACTIVITY",
+  "title": "SUNDAY DINNER",
+  "focus": "Итоговое повторение: все времена",
+  "hint": "",
+  "items": [
+   {
+    "s": "Every Sunday my mother ______ a big dinner for the family.",
+    "b": "COOK",
+    "a": "cooks",
+    "e": "every Sunday → Present Simple: cooks.",
+    "gaps": [
+     {
+      "b": "COOK",
+      "a": "cooks"
+     }
+    ]
+   },
+   {
+    "s": "Last Sunday she ______ a cake for my birthday.",
+    "b": "BAKE",
+    "a": "baked",
+    "e": "Last Sunday → Past Simple: baked.",
+    "gaps": [
+     {
+      "b": "BAKE",
+      "a": "baked"
+     }
+    ]
+   },
+   {
+    "s": "Now she ______ a new recipe from the internet.",
+    "b": "TRY",
+    "a": "is trying",
+    "e": "Now → Present Continuous: is trying.",
+    "gaps": [
+     {
+      "b": "TRY",
+      "a": "is trying"
+     }
+    ]
+   },
+   {
+    "s": "She ______ that cooking is a kind of art.",
+    "b": "BELIEVE",
+    "a": "believes",
+    "e": "believe — состояние → Present Simple: believes.",
+    "gaps": [
+     {
+      "b": "BELIEVE",
+      "a": "believes"
+     }
+    ]
+   },
+   {
+    "s": "Tomorrow we ______ our grandparents — we have invited them already.",
+    "b": "VISIT",
+    "a": "are visiting",
+    "e": "Приглашение отправлено — договорённость → are visiting.",
+    "gaps": [
+     {
+      "b": "VISIT",
+      "a": "are visiting"
+     }
+    ]
+   },
+   {
+    "s": "I ______ her with the table, I promise.",
+    "b": "HELP",
+    "a": "will help",
+    "e": "Обещание → will help.",
+    "gaps": [
+     {
+      "b": "HELP",
+      "a": "will help"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "tag": "ACTIVITY",
+  "title": "OUR SCHOOL SPORTS DAY",
+  "focus": "Итоговое повторение: все времена",
+  "hint": "",
+  "items": [
+   {
+    "s": "Our school ______ a sports day every May.",
+    "b": "HOLD",
+    "a": "holds",
+    "e": "every May → Present Simple: holds.",
+    "gaps": [
+     {
+      "b": "HOLD",
+      "a": "holds"
+     }
+    ]
+   },
+   {
+    "s": "Last year I ______ in the 100-metre race.",
+    "b": "RUN",
+    "a": "ran",
+    "e": "Last year → Past Simple; run → ran.",
+    "gaps": [
+     {
+      "b": "RUN",
+      "a": "ran"
+     }
+    ]
+   },
+   {
+    "s": "I ______ well because I was ill.",
+    "b": "NOT / FEEL",
+    "a": "did not feel",
+    "e": "Отрицание в Past Simple: did not feel.",
+    "gaps": [
+     {
+      "b": "NOT / FEEL",
+      "a": "did not feel"
+     }
+    ]
+   },
+   {
+    "s": "This year I ______ every morning before school.",
+    "b": "TRAIN",
+    "a": "train",
+    "e": "Регулярно сейчас → Present Simple, I → train.",
+    "gaps": [
+     {
+      "b": "TRAIN",
+      "a": "train"
+     }
+    ]
+   },
+   {
+    "s": "Next month our team ______ to the regional competition — we have the invitation.",
+    "b": "GO",
+    "a": "is going",
+    "e": "Приглашение получено, дата есть → Present Continuous: is going.",
+    "gaps": [
+     {
+      "b": "GO",
+      "a": "is going"
+     }
+    ]
+   },
+   {
+    "s": "Look at the sky — it ______, so the sports day may be cancelled.",
+    "b": "RAIN",
+    "a": "is going to rain",
+    "e": "Вывод по тому, что видно → is going to rain.",
+    "gaps": [
+     {
+      "b": "RAIN",
+      "a": "is going to rain"
+     }
+    ]
+   }
+  ]
+ }
+];
+let EXAM = false;
+
+/* ---------- нормализация ответа ---------- */
+function norm(s){
+  let t = (s||'').toString().toLowerCase().trim();
+  t = t.replace(/[’‘`]/g, "'").replace(/\s+/g,' ').replace(/[.!]+$/,'');
+  t = t.replace(/\b(can)'t\b/g, '$1not').replace(/\bwon't\b/g,'will not');
+  t = t.replace(/n't\b/g,' not');
+  const NOAPOS = {isnt:'is not',arent:'are not',wasnt:'was not',werent:'were not',
+    dont:'do not',doesnt:'does not',didnt:'did not',wont:'will not',cant:'can not',
+    couldnt:'could not',shouldnt:'should not',wouldnt:'would not',
+    havent:'have not',hasnt:'has not',hadnt:'had not'};
+  t = t.replace(/\b(isnt|arent|wasnt|werent|dont|doesnt|didnt|wont|cant|couldnt|shouldnt|wouldnt|havent|hasnt|hadnt)\b/g,
+                m => NOAPOS[m]);
+  return t.replace(/\s+/g,' ').trim();
+}
+function variants(a){
+  const base = norm(a);
+  const set = new Set([base]);
+  set.add(base.replace(/\bdo not\b/g,"don't").replace(/\bdoes not\b/g,"doesn't")
+               .replace(/\bis not\b/g,"isn't").replace(/\bare not\b/g,"aren't")
+               .replace(/\bwill not\b/g,"won't").replace(/\bdid not\b/g,"didn't"));
+  return set;
+}
+function fmt(ms){
+  const s = Math.floor(ms/1000), m = Math.floor(s/60), r = s%60;
+  return (m<10?'0':'')+m+':'+(r<10?'0':'')+r;
+}
+
+/* ---------- отрисовка ---------- */
+const wrap = document.getElementById('blocks');
+let inputs = [];
+const timers = {};   // n -> {start, tick, el, done, ms}
+
+DATA.forEach(b=>{
+  const sec = document.createElement('section');
+  sec.className = 'block';
+  sec.dataset.block = b.n;
+
+  const head = document.createElement('div');
+  head.className = 'head';
+  head.innerHTML = '<div><div class="tag">ACTIVITY ' + b.n + ' · KIT 5</div>'
+    + '<h2 class="title">' + b.title + '</h2></div>';
+  sec.appendChild(head);
+
+  const instr = document.createElement('div');
+  instr.className = 'instr';
+  instr.textContent = 'Fill in the gaps with the correct form of the word on the right. Read the whole sentence first.';
+  sec.appendChild(instr);
+
+  const instrExam = document.createElement('div');
+  instrExam.className = 'instr-exam';
+  instrExam.textContent = 'Exam mode: fill in all the gaps first, then press Submit.';
+  sec.appendChild(instrExam);
+
+  const ol = document.createElement('ol');
+  ol.className = 'sents';
+
+  b.items.forEach((it, idx)=>{
+    const li = document.createElement('li');
+    const txt = document.createElement('div');
+    txt.className = 'txt';
+    const parts = it.s.split('______');
+    const gaps = it.gaps || [{b: it.b, a: it.a}];
+    parts.forEach((chunk, i)=>{
+      txt.appendChild(document.createTextNode(chunk));
+      if(i < parts.length - 1){
+        const g = gaps[i] || gaps[0];
+        const inp = document.createElement('input');
+        inp.className = 'ans';
+        inp.type = 'text';
+        inp.autocomplete = 'off';
+        inp.spellcheck = false;
+        inp.setAttribute('aria-label', 'gap ' + (idx+1));
+        inp.size = Math.max(10, Math.min(20, g.a.length + 5));
+        txt.appendChild(inp);
+        const rec = {el:inp, answer:g.a, item:it, block:b.n, idx:idx, ok:null};
+        inputs.push(rec);
+        inp.addEventListener('focus', ()=>startTimer(b.n));
+        inp.addEventListener('input', ()=>{
+          startTimer(b.n);
+          if(rec._autofilled){ rec._autofilled = false; inp.classList.remove('rev'); }
+          if(!EXAM){
+            inp.classList.remove('ok','bad');
+            rec.ok = null;
+            if(rec.markEl){ rec.markEl.textContent = ''; rec.markEl.className = 'mark'; }
+          }
+          updateTotals();
+          saveState();
+        });
+        inp.addEventListener('keydown', e=>{
+          if(e.key === 'Enter'){
+            e.preventDefault();
+            if(!EXAM) checkOne(rec);
+            const pos = inputs.indexOf(rec);
+            if(inputs[pos+1]) inputs[pos+1].el.focus();
+          }
+        });
+      }
+    });
+    li.appendChild(txt);
+
+    const mark = document.createElement('span');
+    mark.className = 'mark';
+    li.appendChild(mark);
+
+    const root = document.createElement('span');
+    root.className = 'root';
+    root.textContent = it.gaps ? it.gaps.map(g=>g.b).join(' / ') : it.b;
+    li.appendChild(root);
+
+    ol.appendChild(li);
+
+    const rec = inputs[inputs.length-1];
+    if(rec) rec.markEl = mark;
+
+    const expl = document.createElement('div');
+    expl.className = 'expl';
+    const shownAns = gaps.length > 1 ? gaps.map(x=>x.a).join(' / ') : it.a;
+    expl.innerHTML = '<b>' + shownAns + '</b> — ' + it.e;
+    ol.appendChild(expl);
+    if(rec) rec.explEl = expl;
+  });
+
+  sec.appendChild(ol);
+
+  const foot = document.createElement('div');
+  foot.className = 'foot';
+
+  const bCheck = document.createElement('button');
+  bCheck.className = 'primary small';
+  bCheck.textContent = 'Check';
+  bCheck.onclick = ()=>checkBlock(b.n);
+  foot.appendChild(bCheck);
+
+  const bShow = document.createElement('button');
+  bShow.className = 'small';
+  bShow.textContent = 'Show answers';
+  bShow.onclick = ()=>revealBlock(b.n, bShow);
+  foot.appendChild(bShow);
+
+  const timerEl = document.createElement('span');
+  timerEl.className = 'timer';
+  timerEl.textContent = '00:00';
+  timerEl.title = 'Time on this practice';
+  foot.appendChild(timerEl);
+
+  const score = document.createElement('div');
+  score.className = 'score';
+  score.innerHTML = 'Score: <b>0</b> / ' + ol.querySelectorAll('input.ans').length;
+  foot.appendChild(score);
+
+  sec.appendChild(foot);
+  sec._score = score;
+  sec._checkBtn = bCheck;
+  sec._showBtn = bShow;
+  wrap.appendChild(sec);
+
+  timers[b.n] = {start:null, tick:null, el:timerEl, done:false, ms:0};
+});
+
+/* ---------- таймер практики ---------- */
+function startTimer(n){
+  const t = timers[n];
+  if(!t || t.done || t.start !== null) return;
+  t.start = Date.now();
+  t.el.classList.add('run');
+  t.tick = setInterval(()=>{
+    t.ms = Date.now() - t.start;
+    t.el.textContent = fmt(t.ms);
+  }, 200);
+}
+function stopTimer(n){
+  const t = timers[n];
+  if(!t) return;
+  if(t.tick){ clearInterval(t.tick); t.tick = null; }
+  if(t.start !== null){ t.ms = Date.now() - t.start; t.start = null; }
+  t.done = true;
+  saveState();
+  t.el.textContent = fmt(t.ms);
+  t.el.classList.remove('run');
+  t.el.classList.add('done');
+  t.el.title = 'Time: ' + fmt(t.ms);
+}
+function resetTimer(n){
+  const t = timers[n];
+  if(!t) return;
+  if(t.tick){ clearInterval(t.tick); t.tick = null; }
+  t.start = null; t.done = false; t.ms = 0;
+  t.el.textContent = '00:00';
+  t.el.className = 'timer';
+}
+
+/* ---------- проверка ---------- */
+function checkOne(rec){
+  if(!rec) return;
+  const v = rec.el.value;
+  if(!v.trim()){ rec.el.classList.remove('ok','bad'); rec.ok = null; return; }
+  const good = variants(rec.answer).has(norm(v));
+  rec.ok = good;
+  rec.el.classList.remove('ok','bad');
+  rec.el.classList.add(good ? 'ok' : 'bad');
+  if(rec.markEl){ rec.markEl.textContent = good ? '✓' : '✗'; rec.markEl.className = 'mark ' + (good?'ok':'bad'); }
+  if(rec.explEl){ rec.explEl.classList.toggle('show', !good); }
+}
+function blockRecords(n){ return inputs.filter(r=>r.block===n); }
+
+/* единый показ счёта практики: честный, с учётом режима «показать ответы» */
+function sectionScore(sec, recs){
+  if(!sec || !sec._score || !recs) return;
+  if(sec._revealed){
+    sec._score.innerHTML = 'Score: <b>—</b> / ' + recs.length + ' · answers shown';
+    return;
+  }
+  const ok = recs.filter(r=>r.ok === true).length;
+  sec._score.innerHTML = 'Score: <b>'+ok+'</b> / '+recs.length + (ok===recs.length ? '  🎉' : '');
+}
+
+function checkBlock(n){
+  const recs = blockRecords(n);
+  const sec = document.querySelector('section[data-block="'+n+'"]');
+  if(EXAM){
+    const empty = recs.filter(r=>!r.el.value.trim()).length;
+    if(empty){
+      toast(empty === 1 ? 'One gap is empty — fill it in first'
+                        : empty + ' gaps are empty — fill them in first');
+      return;
+    }
+  }
+  recs.forEach(checkOne);
+  stopTimer(n);
+  const ok = recs.filter(r=>r.ok).length;
+  if(sec){
+    sec.classList.add('submitted');
+    if(sec._revealed){ sec._revealed = false; if(sec._showBtn) sec._showBtn.textContent = 'Show answers'; }
+    sectionScore(sec, recs);
+    if(sec._checkBtn) sec._checkBtn.textContent = EXAM ? 'Submit again' : 'Check again';
+  }
+  updateTotals();
+  saveState();
+  const t = timers[n];
+  toast('Activity '+n+' — '+ok+' / '+recs.length+' · '+fmt(t?t.ms:0));
+}
+
+function revealBlock(n, btn){
+  const recs = blockRecords(n);
+  const sec = document.querySelector('section[data-block="'+n+'"]');
+  const revealed = !!(sec && sec._revealed);
+  if(!revealed){
+    recs.forEach(r=>{
+      const empty = !r.el.value.trim();
+      if(empty){
+        r.el.value = r.answer;
+        r._autofilled = true;
+        r.el.classList.remove('bad'); r.el.classList.add('ok','rev');
+        if(r.markEl){ r.markEl.textContent='✓'; r.markEl.className='mark ok'; }
+      } else {
+        /* у набранного ответа показываем правду: верно / неверно */
+        const good = variants(r.answer).has(norm(r.el.value.trim()));
+        r.el.classList.remove('ok','bad');
+        r.el.classList.add(good ? 'ok' : 'bad');
+        if(r.markEl){ r.markEl.textContent = good ? '✓' : '✗';
+                      r.markEl.className = 'mark ' + (good ? 'ok' : 'bad'); }
+      }
+      /* объяснение видно там, где ответ не подтверждён */
+      if(r.explEl) r.explEl.classList.toggle('show', r.ok !== true);
+    });
+  } else {
+    recs.forEach(r=>{
+      if(r._autofilled){ r.el.value=''; r._autofilled=false; }
+      r.el.classList.remove('ok','bad','rev');
+      r.ok = null;
+      if(r.markEl){ r.markEl.textContent=''; r.markEl.className='mark'; }
+      if(r.explEl) r.explEl.classList.remove('show');
+    });
+  }
+  if(sec){
+    sec._revealed = !revealed;
+    if(revealed){ sec.classList.remove('submitted'); }
+  }
+  if(btn) btn.textContent = revealed ? 'Show answers' : 'Hide answers';
+  updateTotals();
+  saveState();
+}
+
+function updateTotals(){
+  document.getElementById('totalOk').textContent =
+    inputs.filter(r=>r.ok === true && !r._autofilled).length;
+  DATA.forEach(b=>{
+    const sec = document.querySelector('section[data-block="'+b.n+'"]');
+    sectionScore(sec, blockRecords(b.n));
+  });
+}
+
+/* ---------- режим экзамена ---------- */
+const examBtn = document.getElementById('examToggle');
+const examLabel = document.getElementById('examLabel');
+function setExam(on, opts){
+  const keep = !!(opts && opts.keep);
+  EXAM = on;
+  document.body.classList.toggle('exam', on);
+  examBtn.classList.toggle('on', on);
+  const ca = document.getElementById('checkAll');
+  if(ca) ca.style.display = on ? 'none' : '';
+  examLabel.textContent = 'Exam mode: ' + (on ? 'on' : 'off');
+  document.querySelectorAll('section.block').forEach(sec=>{
+    const btn = sec._checkBtn, show = sec._showBtn;
+    if(btn) btn.textContent = on ? (sec.classList.contains('submitted') ? 'Submit again' : 'Submit')
+                                 : (sec.classList.contains('submitted') ? 'Check again' : 'Check');
+    if(show) show.style.display = on ? 'none' : '';
+  });
+  if(on && !keep){
+    // при включении режима снимаем отметки, но оставляем введённое
+    inputs.forEach(r=>{
+      r.el.classList.remove('ok','bad');
+      r.ok = null;
+      if(r.markEl){ r.markEl.textContent = ''; r.markEl.className = 'mark'; }
+      if(r.explEl) r.explEl.classList.remove('show');
+    });
+    document.querySelectorAll('section.block').forEach(s=>{
+      s.classList.remove('submitted'); s._revealed = false;
+    });
+    document.querySelectorAll('section.block').forEach(sec=>{
+      const n = +sec.dataset.block;
+      sec._revealed = false;
+      if(sec._showBtn) sec._showBtn.textContent = 'Show answers';
+      sectionScore(sec, blockRecords(n));
+    });
+    updateTotals();
+    toast('Exam mode: answers are checked only with Submit');
+  } else if(!on && !keep){
+    toast('Practice mode: instant check');
+  }
+  if(!keep) saveState();
+}
+
+examBtn.onclick = ()=>setExam(!EXAM);
+
+/* ---------- общие кнопки ---------- */
+document.getElementById('checkAll').onclick = ()=>{
+  inputs.forEach(checkOne);
+  DATA.forEach(b=>{
+    const sec = document.querySelector('section[data-block="'+b.n+'"]');
+    if(sec){
+      sec.classList.add('submitted');
+      if(sec._checkBtn) sec._checkBtn.textContent = EXAM ? 'Submit again' : 'Check again';
+      sectionScore(sec, blockRecords(b.n));
+    }
+  });
+  stopAllTimers();
+  updateTotals();
+  toast('Correct: ' + inputs.filter(r=>r.ok === true && !r._autofilled).length + ' / ' + inputs.length);
+};
+
+function stopAllTimers(){ DATA.forEach(b=>stopTimer(b.n)); }
+
+document.getElementById('resetAll').onclick = ()=>{
+  inputs.forEach(r=>{
+    r.el.value = ''; r.el.classList.remove('ok','bad'); r.ok = null;
+    if(r.markEl){ r.markEl.textContent=''; r.markEl.className='mark'; }
+    if(r.explEl) r.explEl.classList.remove('show');
+    r._autofilled = false;
+  });
+  document.querySelectorAll('section.block').forEach(s=>{
+    s._revealed = false;
+    s.classList.remove('submitted');
+  });
+  document.querySelectorAll('section.block').forEach(s=>{
+    sectionScore(s, blockRecords(+s.dataset.block));
+    if(s._checkBtn) s._checkBtn.textContent = EXAM ? 'Submit' : 'Check';
+    if(s._showBtn){ s._showBtn.textContent = 'Show answers'; }
+  });
+  DATA.forEach(b=>resetTimer(b.n));
+  updateTotals();
+  storeClear();
+  toast('Reset — answers and timers cleared');
+};
+
+/* ---------- тост ---------- */
+let toastTimer = null;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 2200);
+}
+
+/* ---------- сохранение прогресса в браузере ---------- */
+const STORE = 'mixed_tenses_wb1_students_kit5_v1';
+let MEM = {};                       // резерв, если localStorage недоступен
+function storeGet(){
+  try{ const raw = window.localStorage.getItem(STORE); return raw ? JSON.parse(raw) : null; }
+  catch(e){ return MEM[STORE] || null; }
+}
+function storeSet(obj){
+  try{ window.localStorage.setItem(STORE, JSON.stringify(obj)); }
+  catch(e){ MEM[STORE] = obj; }
+}
+function storeClear(){
+  try{ window.localStorage.removeItem(STORE); }catch(e){ delete MEM[STORE]; }
+}
+
+function saveState(){
+  const st = {v:[], s:[], a:[], t:{}, exam:EXAM, ts:Date.now()};
+  inputs.forEach(r=>{
+    st.v.push(r.el.value);
+    st.s.push(r.ok === true ? 1 : (r.ok === false ? 0 : null));
+    st.a.push(r._autofilled ? 1 : 0);
+  });
+  DATA.forEach(b=>{
+    const t = timers[b.n];
+    if(t) st.t[b.n] = {ms: t.ms || 0, start: t.start, done: !!t.done};
+  });
+  storeSet(st);
+}
+
+function loadState(){
+  const st = storeGet();
+  if(!st) return false;
+  // ответы и отметки
+  if(Array.isArray(st.v)){
+    inputs.forEach((r, i)=>{
+      const val = st.v[i];
+      if(typeof val === 'string' && val !== ''){ r.el.value = val; }
+      const status = st.s ? st.s[i] : null;
+      r._autofilled = !!(st.a && st.a[i] === 1);
+      r.el.classList.toggle('rev', r._autofilled);
+      r.el.classList.remove('ok','bad');
+      if(r.markEl){ r.markEl.textContent=''; r.markEl.className='mark'; }
+      if(r.explEl) r.explEl.classList.remove('show');
+      r.ok = null;
+      if(status === 1){
+        r.el.classList.add('ok'); r.ok = true;
+        if(r.markEl){ r.markEl.textContent='✓'; r.markEl.className='mark ok'; }
+      } else if(status === 0){
+        r.el.classList.add('bad'); r.ok = false;
+        if(r.markEl){ r.markEl.textContent='✗'; r.markEl.className='mark bad'; }
+        if(r.explEl) r.explEl.classList.add('show');
+      }
+    });
+  }
+  // таймеры
+  if(st.t){
+    DATA.forEach(b=>{
+      const saved = st.t[b.n];
+      if(!saved) return;
+      const t = timers[b.n];
+      if(!t) return;
+      t.ms = saved.ms || 0;
+      t.done = !!saved.done;
+      if(!t.done && saved.start){
+        t.start = saved.start;
+        t.ms = Date.now() - t.start;
+        t.el.textContent = fmt(t.ms);
+        t.el.className = 'timer run';
+        t.tick = setInterval(()=>{
+          t.ms = Date.now() - t.start;
+          t.el.textContent = fmt(t.ms);
+        }, 200);
+      } else if(t.done){
+        t.start = null;
+        t.el.textContent = fmt(t.ms);
+        t.el.className = 'timer done';
+      }
+    });
+  }
+  // режим экзамена
+  if(st.exam) setExam(true, {keep:true});
+  // восстановим счёт и подписи кнопок по практикам
+  DATA.forEach(b=>{
+    const recs = blockRecords(b.n);
+    const sec = document.querySelector('section[data-block="'+b.n+'"]');
+    if(!sec) return;
+    sectionScore(sec, recs);
+    if(recs.some(r=>r.ok !== null)){
+      sec.classList.add('submitted');
+      if(sec._checkBtn) sec._checkBtn.textContent = 'Check again';
+    }
+  });
+  updateTotals();
+  return true;
+}
+
+if(typeof window !== 'undefined'){
+  window.addEventListener('beforeunload', saveState);
+  document.addEventListener('visibilitychange', ()=>{ if(document.hidden) saveState(); });
+  setInterval(()=>{ if(Object.values(timers).some(t=>t.start)) saveState(); }, 5000);
+}
+
+loadState();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5d74dcccd34f3ac',t:'MTc5NTE3NjEyNw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5d74dcccd34f3ac',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
